@@ -1,0 +1,6 @@
+zookeeper-server-start.bat D:\kafka_2.13-3.1.0\config\zookeeper.properties
+kafka-server-start.bat D:\kafka_2.13-3.1.0\config\server.properties
+kafka-topics.bat --create --topic spring-kafka --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic spring-kafka
+
+note: spring-kafka is topic name we can change that
